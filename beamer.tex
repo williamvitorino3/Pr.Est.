@@ -1,0 +1,102 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+\title[Your Short Title]{Probabilidade e Estatística}
+\author{José William Vitorino de Souza}
+\institute{IFCE - Aracati}
+\date{19/02/2018}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+ %Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+  %\tableofcontents
+%\end{frame}
+
+\section{Introdução}
+
+\begin{frame}{Introdução}
+
+%\vskip 1cm
+
+\begin{block}{}
+O trabalho consiste em responder duas questões. Uma de cada matéria a seguir:
+\end{block}
+
+\begin{itemize}
+  \item Probabilidade.
+  \item Contagem.
+\end{itemize}
+
+\end{frame}
+
+\section{Some \LaTeX{} Examples}
+
+\subsection{Questão 1}
+
+\begin{frame}{Questão 1}
+
+\textbf{(O Problema do Bode)} Este problema foi proposto em um programa de radio nos Estados Unidos e causou um enorme debate na internet. Em um programa de premios, o candidato tem diante de si tres portas. Atrâs de uma dessas portas, ha um grande prêmio; atrâs das demais há um bode. O candidato escolhe inicialmente uma das portas. O apresentador (que sabe qual e a porta que contém o prêmio) abre uma das portas nao indicadas pelo candidato, mostrando necessariamente um bode. A seguir, ele pergunta se o candidato mantem sua escolha ou deseja trocar de porta. O candidato deve trocar ou nao?
+
+\end{frame}
+
+\begin{frame}{Resposta}
+
+São 3 portas, vamos chamar de portas 1, 2 e 3. Vamos admitir que a porta que tem o prêmio seja a porta 3.
+
+Sem saber qual é a certa, vamos simular as possíveis escolhas com as possíveis decisões.
+
+\end{frame}
+
+\begin{frame}
+	Caso 1 - Trocando de porta:
+	\begin{enumerate}
+		\item Escolhe porta 1, abre porta 2, escolhe porta 3 e ganha!
+		\item Escolhe porta 2, abre porta 1, escolhe porta 3 e ganha!
+		\item Escolhe porta 3, abre porta 1, escolhe porta 2 e não ganha!
+	\end{enumerate}
+	 Probabilidade de ganhar: $${2\over 3}$$
+\end{frame}
+
+\begin{frame}
+	Caso 2 - Não trocando de porta:
+	\begin{enumerate}
+		\item Escolhe porta 1, abre porta 2, continua na porta 1 e não ganha!
+		\item Escolhe porta 2, abre porta 1, continua na porta 2 e não ganha!
+		\item Escolhe porta 3, abre porta 1, continua na porta 3 e ganha!
+	\end{enumerate}
+	 Probabilidade de ganhar: $${1\over 3}$$
+\end{frame}
+
+\subsection{Questão 2}
+
+\begin{frame}{Questão 2}
+
+%Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+%$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+ %     = \frac{1}{n}\sum_{i}^{n} X_i$$
+%denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+\end{frame}
+
+\end{document}
